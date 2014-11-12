@@ -213,8 +213,6 @@ define(function() {
     each(getContext(this.id).defined, function(dependency, path) {
       undef(getContext(this.id), path);
     }, this);
-    
-    delete requirejs.s.contexts[this.id];
   };
   
   Squire.prototype.run = function(deps, callback) {
